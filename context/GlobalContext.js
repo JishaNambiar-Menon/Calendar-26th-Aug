@@ -1,0 +1,41 @@
+import React from "react";
+
+const GlobalContext = React.createContext({
+  monthIndex: 0,
+  setMonthIndex: (index) => {},
+  smallCalendarMonth: 0,
+  setSmallCalendarMonth: (index) => {},
+  daySelected: null,
+  setDaySelected: (day) => {},
+  startDaySelected: null,
+  endDaySelected: null,
+  setStartDaySelected: () => {},
+  setEndDaySelected: () => {},
+  showEventModal: false,
+  setShowEventModal: () => {},
+  showMap: false,
+  setShowMap: () => {},
+  showDatePicker: false,
+  showDatePicker1: false,
+  setDatePicker: () => {},
+  setDatePicker1: () => {},
+  dispatchCalEvent: ({ type, payload }) => {},
+  savedEvents: [],
+  setSavedEvents: [],
+  selectedEvent: null,
+  setSelectedEvent: () => {},
+  labels: [],
+  setLabels: () => {},
+  updateLabel: () => {},
+  filteredEvents: [],
+  tempStart: [],
+  setTempStart: () => {},
+  tempEnd: [],
+  setTempEnd: () => {},
+  officeVal: null,
+  setOfficeVal: () => {},
+  office: null,
+  setOffice: () => {}
+});
+
+export default GlobalContext;
